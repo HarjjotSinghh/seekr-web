@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/0M2YXk6/logo.png" alt="Seekr Logo" style="width: 100%; height: auto;" />
+![logo](https://github.com/user-attachments/assets/756f5b19-53be-4635-97ad-77b5e9c53d8d)
 
 # Seekr
 
