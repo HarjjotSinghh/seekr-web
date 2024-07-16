@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* third-party libraries CSS */
+
+.testimonial-01 .swiper-pagination-bullet {
+  @apply h-2.5 w-2.5 bg-stroke opacity-100;
+}
+.testimonial-01 .swiper-pagination-bullet-active {
+  @apply w-5 rounded-full bg-primary;
+}
+
+.testimonial-01 .swiper-pagination {
+  @apply relative pt-[50px];
+}
+
+#supportCheckbox:checked ~ div span {
+  @apply opacity-100;
+}
+
+@layer base {
+  body {
+    @apply text-foreground bg-background font-bricolage relative z-1 text-regular font-normal;
+  }
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 210 8% 5%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 210 8% 5%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 210 8% 5%;
+
+    --primary: 195 70% 48%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 210 7% 94%;
+    --secondary-foreground: 210 8% 5%;
+
+    --muted: 210 7% 94%;
+    --muted-foreground: 197 6% 45%;
+
+    --accent: 193 100% 47%;
+    --accent-foreground: 210 8% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 180 6% 90%;
+    --input: 192 6% 83%;
+    --ring: 195 24% 75%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 180 1% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 180 6% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 180 6% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 195 83% 68%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 195 5% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 200 5% 22%;
+    --muted-foreground: 195 5% 49%;
+
+    --accent: 193 100% 47%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 5% 12%;
+    --input: 195 4% 18%;
+    --ring: 195 82% 40%;
+  }
+}
+
+@layer components {
+  .dropdown {
+    @apply bg-background xl:before:bg-background dark:bg-background -left-7.5 mt-2 hidden min-w-max flex-col gap-4 rounded-md border border-stroke px-8 py-5 shadow-solid-13 duration-300 ease-in dark:border-strokedark xl:invisible
+    xl:absolute xl:mt-0 xl:flex xl:w-[250px] xl:translate-y-10
+    xl:opacity-0 xl:before:absolute xl:before:-top-1.5 xl:before:left-10 xl:before:h-3 xl:before:w-3 xl:before:rotate-45 xl:before:border-l xl:before:border-t xl:before:border-stroke xl:group-hover:visible xl:group-hover:translate-y-6.5 
+    xl:group-hover:opacity-100 xl:dark:before:border-strokedark xl:dark:before:bg-black;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navbar {
+    @apply max-h-[400px] overflow-y-scroll;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .img-white {
+    filter: invert(0%) sepia(96%) saturate(15%) hue-rotate(249deg)
+      brightness(100%) contrast(105%);
+  }
+}
+
+.blog-details-docs {
+  @apply dark:bg-background border-border rounded-lg border p-7.5 shadow-solid-3 transition-all  dark:border-strokedark xl:p-12.5;
+}
+
+.blog-details p {
+  @apply mb-8 text-base leading-relaxed text-titlebgdark dark:text-waterloo;
+}
+
+.blog-details p strong {
+  @apply text-primary dark:text-waterloo;
+}
+.blog-details h3 strong,
+.blog-details h3 {
+  @apply text-foreground dark:text-foreground mb-10 text-xl !font-semibold leading-tight sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight;
+}
+
+.blog-details h4 strong,
+.blog-details h4 {
+  @apply text-foreground dark:text-foreground text-xl !font-semibold leading-tight sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight;
+}
+
+.blog-details h5 strong,
+.blog-details h5 {
+  @apply text-foreground dark:text-foreground mb-3 text-lg !font-semibold leading-tight sm:text-xl;
+}
+
+.blog-details h1 {
+  @apply text-foreground dark:text-foreground mb-4 text-3xl !font-bold !leading-tight sm:text-4xl md:text-[45px] lg:text-4xl xl:text-[45px];
+}
+.blog-details h2 strong,
+.blog-details h2 {
+  @apply text-foreground dark:text-foreground mb-4 text-[26px] !font-bold !leading-tight sm:text-3xl md:text-4xl;
+}
+
+.blog-details ul,
+.blog-details ol {
+  @apply mb-10 list-inside list-disc text-titlebgdark;
+}
+
+.blog-details li,
+.blog-details li {
+  @apply mb-2 text-base text-titlebgdark dark:text-waterloo;
+}
+
+.blog-details blockquote {
+  @apply text-foreground relative z-10 mb-10 overflow-hidden rounded-sm bg-manatee p-8 text-center text-base font-medium italic dark:bg-titlebgdark md:py-9 lg:px-10;
+}
+
+.blog-details blockquote::after {
+  content: "";
+  @apply absolute bottom-0 right-0 h-20 w-20 bg-[url(/images/blog/quote-shape-2.svg)] bg-contain bg-right-bottom bg-no-repeat;
+}
+
+.blog-details blockquote::before {
+  content: "";
+  @apply absolute left-0 top-0 h-[106px] w-[140px] bg-[url(/images/blog/quote-shape-1.svg)] bg-contain bg-left-top bg-no-repeat dark:bg-[url(/images/blog/quote-shape-1.svg)];
+}
+
+pre {
+  @apply relative mb-2 rounded-lg bg-strokedark px-4 py-2;
+}
+.prism-copy-button {
+  @apply bg-background absolute right-2 top-2 h-[26px] rounded px-4 text-primary;
+}
+
+.active-tab {
+  @apply dark:bg-background text-foreground dark:text-foreground bg-stroke;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-weight: variable;
+  font-display: swap;
+  src: url("/fonts/sans.ttf") format("truetype");
+}
