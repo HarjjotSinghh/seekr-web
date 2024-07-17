@@ -1,8 +1,8 @@
-![logo](https://github.com/user-attachments/assets/756f5b19-53be-4635-97ad-77b5e9c53d8d)
+![thumbnail-header-banner](https://github.com/user-attachments/assets/12ca4c5f-c0fa-403e-a112-111ab22711ad)
 
 # Seekr
 
-Seekr is an innovative career guidance platform that leverages cutting-edge AI technology to empower professionals in their career journeys. By combining machine learning, job market analysis, and personalized assessments, Seekr offers users a comprehensive suite of tools to navigate the ever-changing landscape of modern careers. The platform's standout features include a career path predictor that forecasts potential career trajectories, a cross-industry transition analyzer that identifies transferable skills and suggests alternative career paths, and a unique company culture fit analysis tool that helps users gauge their compatibility with potential employers. Whether you're a recent graduate exploring your options, a mid-career professional considering a change, or someone looking to optimize your current career path, Seekr provides data-driven insights and personalized recommendations to help you make informed decisions about your professional future.
+Seekr is an innovative career guidance platform that leverages cutting-edge AI technology to empower professionals in their career journeys. By combining machine learning, job market analysis, and personalized assessments, Seekr offers users a comprehensive suite of tools to navigate the ever-changing landscape of modern careers. The platform's standout features include a career path predictor that forecasts potential career trajectories. This cross-industry transition analyzer identifies transferable skills and suggests alternative career paths and a unique company culture fit analysis tool that helps users gauge their compatibility with potential employers. Whether you're a recent graduate exploring your options, a mid-career professional considering a change, or someone looking to optimize your current career path, Seekr provides data-driven insights and personalized recommendations to help you make informed decisions about your professional future.
 
 ## Development Roadmap
 
