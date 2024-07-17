@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Support Page - Seekr",
   description: "This is the Support page for Seekr",
-  // other metadata
+  // add metadata to improve seo
 };
 
 const SupportPage = () => {

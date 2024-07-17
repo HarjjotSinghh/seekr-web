@@ -2,7 +2,6 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: ["localhost"],
     remotePatterns: [
@@ -12,6 +11,10 @@ const nextConfig = {
         port: "",
       },
     ],
+  },
+  experimental: {
+    ppr: true,
+    reactCompiler: true,
   },
 };
 
